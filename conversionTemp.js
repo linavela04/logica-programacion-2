@@ -12,6 +12,10 @@ do {
 let fahrenheit = ((temperatura *(9/5)) + 32);
 let Kelvin = (temperatura + 273.15);
 
-console.log(`La temperatura ingresada en celsius es: ${temperatura} °C`);
-console.log(`La temperatura ingresada en Fahrenheit es: ${fahrenheit} °F`);
-console.log(`La temperatura ingresada en Kelvin es: ${Kelvin} K`);
+let resultadosDiv = document.getElementById("resultados");
+resultadosDiv.innerHTML = `
+    <p>La temperatura ingresada en celsius es: ${temperatura} °C </p>
+    <p>La temperatura ingresada en Fahrenheit es: ${fahrenheit} °F</p>
+    <p>La temperatura ingresada en Kelvin es: ${Kelvin} K</p>
+    `
+    
